@@ -224,7 +224,7 @@ $(document).ready(function() {
         })
         $("#choose_count").val(totalCount);
         buildLi(totalCount);
-
+		if(totalCount>0) $("#lottery_number").attr("disabled","disabled")
         max_winner = lstorage.get("MAX_WINNER");
         $(".winners ul").html(html.join("\n"));
         $("#winner_count").html(winners.length);
