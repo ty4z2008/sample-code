@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]>
+<html id="ie8" lang="zh-CN">
+<![endif]-->
+<!--[if !(IE 8) ]><!-->
+<html lang="zh-CN">
+<!--<![endif]-->
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>
+		青柏2016年年会抽奖
+	</title>
+
+	<script type="text/javascript" c src="js/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="js/wind-core.js"></script>
+	<script type="text/javascript" src="js/wind-compiler.js"></script>
+	<script type="text/javascript" src="js/wind-builderbase.js"></script>
+	<script type="text/javascript" src="js/wind-async.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+</head>
+
+<body>
+	<div class="controls">
+		<!-- <p class="total-award" id="total_award">共计<span></span>份奖品</p> -->
+		<input type="text" id="choose_count" placeholder="设定抽奖号码" value="1" />
+		<button id="lottery" class="btn waves-effect">我要抽奖</button>
+		<button id="lottery_number" class="btn waves-effect">重新设定</button>
+		<button id="lottery_init" class="btn waves-effect">全部重来</button>
+	</div>
+	<div class="canvas clearfix">
+		<ul>
+		</ul>
+	</div>
+	<div class="chosen">
+		<div class="img">
+		</div>
+		<div class="name">
+		</div>
+	</div>
+	<div class="winners">
+		<div class="title">
+			中奖者(<span id="winner_count">0</span>) <a href="javascript:void(0);" id="checkWinnerList">查看获奖者</a>
+		</div>
+		<ul>
+		</ul>
+	</div>
+</body>
+
+</html>

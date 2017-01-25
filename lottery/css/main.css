@@ -1,0 +1,331 @@
+/**
+* @Author: jeffery
+* @Date:   2017-01-20T11:11:12+08:00
+* @Email:  jeffery@influx.io
+* @Filename: base.css
+* @Last modified by:   jeffery
+* @Last modified time: 2017-01-22T11:35:20+08:00
+* @Copyright: Copyright 2016 Jeffery. All rights reserved.
+*/
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-weight: normal;
+    font-style: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+q:before, q:after {
+    content: "";
+}
+
+abbr, acronym {
+    border: 0;
+}
+
+
+/* == clearfix == */
+
+.clearfix:before {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+.clearfix {
+    display: block;
+}
+* {
+	box-sizing: border-box;
+}
+
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	background-image: url(../img/bg_joyful.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: 微软雅黑, Verdana, sans-serif, 宋体;
+}
+
+.controls {
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	z-index: 5;
+	background-repeat: repeat;
+	color: rgba(0, 0, 0, 0.87);
+}
+
+.btn,
+.btn-large {
+	text-decoration: none;
+	color: #fff;
+	background-color: #F44336;
+	text-align: center;
+	width: 100px;
+	height: 35px;
+	letter-spacing: .5px;
+	transition: .2s ease-out;
+	cursor: pointer;
+	outline: 0;
+	border: 0;
+	font-size: 14px;
+	text-decoration: none;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.waves-effect {
+	position: relative;
+	cursor: pointer;
+	display: inline-block;
+	overflow: hidden;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
+	vertical-align: middle;
+	z-index: 1;
+	will-change: opacity, transform;
+	transition: .3s ease-out;
+	-webkit-tap-highlight-color: transparent;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover,
+.btn-large:hover {
+	opacity: .75;
+}
+
+.controls input {
+	font-size: 16px;
+	font-weight: 300;
+	width: 300px;
+	height: 45px;
+	margin: 0;
+	padding: 0 45px 0 15px;
+	border: 0;
+	outline: 0;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.controls button {
+	margin-left: 10px;
+	line-height: normal;
+}
+
+.controls input#choose_count {
+	margin-left: 10px;
+}
+
+.canvas {
+	text-align: center;
+	height: 100%;
+	margin: 0 auto;
+	padding: 70px 5% 0 5%;
+	display: block;
+	position: relative;
+}
+
+.canvas li {
+	width: 120px;
+	height: 150px;
+	float: left;
+	margin: 5px;
+	display: -webkit-flex;
+	display: flex;
+	text-align: center;
+	line-height: 120px;
+	list-style: none;
+	position: relative;
+	-webkit-transition: width 0.4s ease, height 0.4s ease;
+	-moz-transition: width 0.4s ease, height 0.4s ease;
+	-ms-transition: width 0.4s ease, height 0.4s ease;
+	-o-transition: width 0.4s ease, height 0.4s ease;
+	transition: width 0.4s ease, height 0.4s ease;
+}
+.canvas li:last-child{
+	margin-bottom: 210px;
+}
+.canvas li img {
+	width: 100%;
+}
+
+.canvas .item_box,
+.winners .item_box {
+	text-align: center;
+	font-size: 55px;
+	background-image: url(../img/nav-bg.png);
+	background-repeat: repeat;
+	color: #f7e1ca;
+	display: block;
+	font-weight: 200;
+	position: relative;
+	padding-right: 5px;
+	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.canvas .item_box p,
+.winners .item_box p {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	color: #e73e2d;
+	text-align: center;
+	line-height: 80px;
+	background-color: #f7e1ca;
+	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	letter-spacing: 0em;
+	margin-left: -40px;
+	margin-top: -40px;
+}
+.canvas .item_box .envelope{
+	height: 90px;
+	width: 120px;
+	background-color: #BD503A;
+	border-radius: 0px 0px 50% 50% / 0px 0px 15% 15%;
+	box-shadow: 0px 2px 0px -1px rgba(0,0,0,0.2);
+}
+.canvas li.active {
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.chosen {
+	position: absolute;
+	width: 200px;
+	height: 250px;
+	text-align: center;
+	background-image: url(../img/nav-bg.png);
+	background-repeat: repeat;
+	color: #A00;
+	font-size: 30px;
+	display: none;
+}
+
+.chosen .name {
+	word-break: break-all;
+	background-color: #FFF;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	width: 100%;
+}
+
+.winners {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background: #fff;
+	z-index: 6;
+	height: 200px;
+	overflow-y: auto;
+}
+
+.winners li {
+	width: 120px;
+	height: 150px;
+	float: left;
+	margin: 5px;
+	display: -webkit-flex;
+	/* Safari */
+	display: flex;
+	text-align: center;
+	line-height: 120px;
+	list-style: none;
+	position: relative;
+	-webkit-transition: width 0.4s ease, height 0.4s ease;
+	-moz-transition: width 0.4s ease, height 0.4s ease;
+	-ms-transition: width 0.4s ease, height 0.4s ease;
+	-o-transition: width 0.4s ease, height 0.4s ease;
+	transition: width 0.4s ease, height 0.4s ease;
+	position: relative;
+}
+
+.winners li img {
+	width: 60px;
+	height: 60px;
+}
+
+.btn.disabled,
+.btn[disabled],
+.btn-large[disabled] {
+	pointer-events: none;
+	background-color: #DFDFDF !important;
+	box-shadow: none;
+	color: #9F9F9F !important;
+	cursor: default;
+}
+
+.winners .title {
+	padding: 10px;
+	border-bottom: 1px solid #eee;
+	background-image: -webkit-linear-gradient(left, #c85959, #fbcd6a);
+	background-image: linear-gradient(90deg, #c85959, #fbcd6a);
+	color: #efefef;
+}
+
+.winners .title .checkList {
+	color: #fff;
+}
+
+.blink .name {
+	font-size: 60px;
+	-webkit-transition: font-size 0.4s ease;
+	-moz-transition: font-size 0.4s ease;
+	-ms-transition: font-size 0.4s ease;
+	-o-transition: font-size 0.4s ease;
+	transition: font-size 0.4s ease;
+}
+.total-award{
+	font-size: 14px;
+	display: inline-block;
+}
+.total-award span{
+	font-weight: 700;
+	color: #F44336;
+	font-size: 16px;
+}
+#checkWinnerList{
+	color: #fff;
+	border: 1px solid #fff;
+	text-decoration: none;
+	padding: 3px 6px;
+}
