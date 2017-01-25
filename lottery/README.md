@@ -1,8 +1,10 @@
-# sample-code
-open source same code...
 
 ###lottery project
 
 Support localStorage storage record,You don't worry  about data lose, Random Draw .
 
-[Lottery Document](lottery/README.md)
+preview:
+
+![demo1](demo/demo1.png)
+
+![demo2](demo/demo2.png)
